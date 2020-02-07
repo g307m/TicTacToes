@@ -1,5 +1,7 @@
 use super::con;
-use super::vars;
+pub fn whatdoido() -> () {
+    pub(crate) mut board: [char;9] = [' ',' ',' ',' ',' ',' ',' ',' ',' '];
+}
 pub fn grid() -> () {
     con::clear();
     con::goto(1,1);
@@ -21,7 +23,7 @@ pub fn grid() -> () {
 }
 pub fn play(player:bool,x:i8,y:i8) -> () {
     if(player){
-        super::board[1] = 'x';
+        board[1] = 'x';
     }else{
 
     }
